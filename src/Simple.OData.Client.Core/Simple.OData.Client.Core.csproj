@@ -1,10 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
+		<TargetFrameworks>net461;netstandard2.0;net6.0</TargetFrameworks>
 		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 		<RootNamespace>Simple.OData.Client</RootNamespace>
-		<OutputPath>$(SolutionDir)/build/$(Configuration)/$(AssemblyName)/$(TargetFramework)/</OutputPath>
-		<OutDir>$(OutputPath)</OutDir>
 		<Decription></Decription>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
@@ -33,29 +31,31 @@
 		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
 	</ItemGroup>
 	<ItemGroup>
-		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-			<_Parameter1>Simple.OData.Client.Dynamic, $(StrongNamePublicKey)</_Parameter1>
-		</AssemblyAttribute>
-		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-			<_Parameter1>Simple.OData.Client.V3.Adapter, $(StrongNamePublicKey)</_Parameter1>
-		</AssemblyAttribute>
-		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-			<_Parameter1>Simple.OData.Client.V4.Adapter, $(StrongNamePublicKey)</_Parameter1>
-		</AssemblyAttribute>
-		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-			<_Parameter1>Simple.OData.Client.UnitTests, $(StrongNamePublicKey)</_Parameter1>
-		</AssemblyAttribute>
-		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-			<_Parameter1>Simple.OData.Client.IntegrationTests, $(StrongNamePublicKey)</_Parameter1>
-		</AssemblyAttribute>
-		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-			<_Parameter1>WebApiOData.V3.Samples.Tests, $(StrongNamePublicKey)</_Parameter1>
-		</AssemblyAttribute>
-		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-			<_Parameter1>WebApiOData.V4.Samples.Tests, $(StrongNamePublicKey)</_Parameter1>
-		</AssemblyAttribute>
-		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-			<_Parameter1>Simple.OData.Client.Benchmarks, $(StrongNamePublicKey)</_Parameter1>
-		</AssemblyAttribute>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo"><_Parameter1>Simple.OData.Client.Dynamic, $(StrongNamePublicKey)</_Parameter1></AssemblyAttribute>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo"><_Parameter1>Simple.OData.Client.V3.Adapter, $(StrongNamePublicKey)</_Parameter1></AssemblyAttribute>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo"><_Parameter1>Simple.OData.Client.V4.Adapter, $(StrongNamePublicKey)</_Parameter1></AssemblyAttribute>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo"><_Parameter1>Simple.OData.Client.UnitTests, $(StrongNamePublicKey)</_Parameter1></AssemblyAttribute>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo"><_Parameter1>Simple.OData.Client.IntegrationTests, $(StrongNamePublicKey)</_Parameter1></AssemblyAttribute>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo"><_Parameter1>WebApiOData.V3.Samples.Tests, $(StrongNamePublicKey)</_Parameter1></AssemblyAttribute>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo"><_Parameter1>WebApiOData.V4.Samples.Tests, $(StrongNamePublicKey)</_Parameter1></AssemblyAttribute>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo"><_Parameter1>Simple.OData.Client.Benchmarks, $(StrongNamePublicKey)</_Parameter1></AssemblyAttribute>
+
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo"><_Parameter1>Simple.OData.Client.Dynamic</_Parameter1></AssemblyAttribute>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo"><_Parameter1>Simple.OData.Client.V3.Adapter</_Parameter1></AssemblyAttribute>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo"><_Parameter1>Simple.OData.Client.V4.Adapter</_Parameter1></AssemblyAttribute>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo"><_Parameter1>Simple.OData.Client.UnitTests</_Parameter1></AssemblyAttribute>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo"><_Parameter1>Simple.OData.Client.IntegrationTests</_Parameter1></AssemblyAttribute>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo"><_Parameter1>WebApiOData.V3.Samples.Tests</_Parameter1></AssemblyAttribute>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo"><_Parameter1>WebApiOData.V4.Samples.Tests</_Parameter1></AssemblyAttribute>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo"><_Parameter1>Simple.OData.Client.Benchmarks</_Parameter1></AssemblyAttribute>
+
+		<InternalsVisibleTo Include="Simple.OData.Client.Dynamic, $(StrongNamePublicKey)" />
+		<InternalsVisibleTo Include="Simple.OData.Client.V3.Adapter, $(StrongNamePublicKey)" />
+		<InternalsVisibleTo Include="Simple.OData.Client.V4.Adapter, $(StrongNamePublicKey)" />
+		<InternalsVisibleTo Include="Simple.OData.Client.UnitTests, $(StrongNamePublicKey)" />
+		<InternalsVisibleTo Include="Simple.OData.Client.IntegrationTests, $(StrongNamePublicKey)" />
+		<InternalsVisibleTo Include="WebApiOData.V3.Samples.Tests, $(StrongNamePublicKey)" />
+		<InternalsVisibleTo Include="WebApiOData.V4.Samples.Tests, $(StrongNamePublicKey)" />
+		<InternalsVisibleTo Include="Simple.OData.Client.Benchmarks, $(StrongNamePublicKey)" />
 	</ItemGroup>
 </Project>

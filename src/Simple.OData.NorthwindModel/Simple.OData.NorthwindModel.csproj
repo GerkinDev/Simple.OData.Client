@@ -2,8 +2,6 @@
 	<PropertyGroup>
 		<TargetFrameworks>net461</TargetFrameworks>
 		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-		<OutputPath>$(SolutionDir)/build/$(Configuration)/$(AssemblyName)/$(TargetFramework)/</OutputPath>
-		<OutDir>$(OutputPath)</OutDir>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>

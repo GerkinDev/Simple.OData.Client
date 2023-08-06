@@ -3,8 +3,6 @@
 		<TargetFrameworks>net6.0</TargetFrameworks>
 		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 		<RootNamespace>Simple.OData.NorthwindService</RootNamespace>
-		<OutputPath>$(SolutionDir)/build/$(Configuration)/$(AssemblyName)/$(TargetFramework)/</OutputPath>
-		<OutDir>$(OutputPath)</OutDir>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>
