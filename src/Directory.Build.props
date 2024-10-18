@@ -89,8 +89,8 @@
 
 	<PropertyGroup Condition=" '$(IsPrimaryProject)' == 'true' ">
 		<IsPackable>true</IsPackable>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<GenerateDocumentationFile>false</GenerateDocumentationFile>
 		<DocumentationFile>bin\$(Configuration)\$(TargetFramework)</DocumentationFile>
 	</PropertyGroup>
 
