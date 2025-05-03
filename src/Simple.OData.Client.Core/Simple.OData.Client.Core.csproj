@@ -4,8 +4,8 @@
 		<TargetFrameworks>net8.0</TargetFrameworks>
 		<RootNamespace>Simple.OData.Client</RootNamespace>
 		<DocumentationFile>$(DocumentationFile)\$(AssemblyName).xml</DocumentationFile>
-		<StrongNamePublicKey>$(StrongNamePublicKey)</StrongNamePublicKey>
-		<IsPackable>true</IsPackable>
+		<!-- <StrongNamePublicKey>$(StrongNamePublicKey)</StrongNamePublicKey> -->
+		<!-- <IsPackable>true</IsPackable> -->
 	</PropertyGroup>
 
 	<PropertyGroup>
@@ -31,25 +31,32 @@
 	
 	<ItemGroup>
 		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-			<_Parameter1>Simple.OData.Client.V3.Adapter, $(StrongNamePublicKey)</_Parameter1>
+			<!-- <_Parameter1>Simple.OData.Client.V3.Adapter, $(StrongNamePublicKey)</_Parameter1> -->
+			<_Parameter1>Simple.OData.Client.V3.Adapter</_Parameter1>
 		</AssemblyAttribute>
 		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-			<_Parameter1>Simple.OData.Client.V4.Adapter, $(StrongNamePublicKey)</_Parameter1>
+			<!-- <_Parameter1>Simple.OData.Client.V4.Adapter, $(StrongNamePublicKey)</_Parameter1> -->
+			<_Parameter1>Simple.OData.Client.V4.Adapter</_Parameter1>
 		</AssemblyAttribute>
 		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-			<_Parameter1>Simple.OData.Tests.Client, $(StrongNamePublicKey)</_Parameter1>
+			<!-- <_Parameter1>Simple.OData.Tests.Client, $(StrongNamePublicKey)</_Parameter1> -->
+			<_Parameter1>Simple.OData.Tests.Client</_Parameter1>
 		</AssemblyAttribute>
 		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-			<_Parameter1>Simple.OData.Tests.Client.Integration, $(StrongNamePublicKey)</_Parameter1>
+			<!-- <_Parameter1>Simple.OData.Tests.Client.Integration, $(StrongNamePublicKey)</_Parameter1> -->
+			<_Parameter1>Simple.OData.Tests.Client.Integration</_Parameter1>
 		</AssemblyAttribute>
 		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-			<_Parameter1>Simple.OData.Tests.Samples.ApiV3, $(StrongNamePublicKey)</_Parameter1>
+			<!-- <_Parameter1>Simple.OData.Tests.Samples.ApiV3, $(StrongNamePublicKey)</_Parameter1> -->
+			<_Parameter1>Simple.OData.Tests.Samples.ApiV3</_Parameter1>
 		</AssemblyAttribute>
 		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-			<_Parameter1>Simple.OData.Tests.Samples.ApiV4, $(StrongNamePublicKey)</_Parameter1>
+			<!-- <_Parameter1>Simple.OData.Tests.Samples.ApiV4, $(StrongNamePublicKey)</_Parameter1> -->
+			<_Parameter1>Simple.OData.Tests.Samples.ApiV4</_Parameter1>
 		</AssemblyAttribute>
 		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-			<_Parameter1>Simple.OData.Benchmarks.Client, $(StrongNamePublicKey)</_Parameter1>
+			<!-- <_Parameter1>Simple.OData.Benchmarks.Client, $(StrongNamePublicKey)</_Parameter1> -->
+			<_Parameter1>Simple.OData.Benchmarks.Client</_Parameter1>
 		</AssemblyAttribute>
 	</ItemGroup>
 

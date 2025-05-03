@@ -15,9 +15,9 @@
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 
-		<SignAssembly>true</SignAssembly>
-		<AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)Simple.OData.Client.snk</AssemblyOriginatorKeyFile>
-		<StrongNamePublicKey>PublicKey=00240000048000009400000006020000002400005253413100040000010001002d608f5bce35f3eff1c1102fc3a90c0c1fb48a69491aa396dc6f2b3214374645179700266ff7c64b35de02956afd8e0f29a6de4d4a32660d2ac7c531901daf5e1130944b1ca1e9a95cb7abcadca5aab49507e5673c1d0315e41157c0daf720fca9a7bfa78a264648bedc83ddb75792c607dda0b84e48ff577db2898566a470c2</StrongNamePublicKey>
+		<!-- <SignAssembly>true</SignAssembly> -->
+		<!-- <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)Simple.OData.Client.snk</AssemblyOriginatorKeyFile> -->
+		<!-- <StrongNamePublicKey>PublicKey=00240000048000009400000006020000002400005253413100040000010001002d608f5bce35f3eff1c1102fc3a90c0c1fb48a69491aa396dc6f2b3214374645179700266ff7c64b35de02956afd8e0f29a6de4d4a32660d2ac7c531901daf5e1130944b1ca1e9a95cb7abcadca5aab49507e5673c1d0315e41157c0daf720fca9a7bfa78a264648bedc83ddb75792c607dda0b84e48ff577db2898566a470c2</StrongNamePublicKey> -->
 
 		<LangVersion>12</LangVersion>
 	</PropertyGroup>
@@ -89,14 +89,14 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition=" '$(IsPrimaryProject)' == 'true' ">
-		<IsPackable>true</IsPackable>
+		<!-- <IsPackable>true</IsPackable> -->
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 		<GenerateDocumentationFile>false</GenerateDocumentationFile>
 		<DocumentationFile>bin\$(Configuration)\$(TargetFramework)</DocumentationFile>
 	</PropertyGroup>
 
 	<PropertyGroup Condition=" '$(IsPrimaryProject)' != 'true' ">
-		<IsPackable>false</IsPackable>
+		<!-- <IsPackable>false</IsPackable> -->
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 		<GenerateDocumentationFile>false</GenerateDocumentationFile>
 	</PropertyGroup>

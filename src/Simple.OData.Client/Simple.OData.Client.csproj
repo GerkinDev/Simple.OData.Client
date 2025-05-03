@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFrameworks>net8.0</TargetFrameworks>
 		<DocumentationFile>$(DocumentationFile)\$(AssemblyName).xml</DocumentationFile>
-		<StrongNamePublicKey>$(StrongNamePublicKey)</StrongNamePublicKey>
+		<!-- <StrongNamePublicKey>$(StrongNamePublicKey)</StrongNamePublicKey> -->
 	</PropertyGroup>
 
 	<PropertyGroup>
