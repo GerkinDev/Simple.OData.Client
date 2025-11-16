@@ -1,4 +1,4 @@
-﻿using System.Globalization;
+using System.Globalization;
 using System.Linq.Expressions;
 
 namespace Simple.OData.Client;
@@ -235,7 +235,8 @@ public partial class ODataExpression
 	private string FormatEnumHasFlagFunction(ExpressionContext context)
 	{
 		var value = FormatExpression(Function.Arguments.First(), new ExpressionContext(context.Session));
-		return $"{FormatCallerReference()} has {value}";
+		var target = context.ScopeQualifier == null ? FormatCallerReference() : $"{context.ScopeQualifier}/{FormatCallerReference()}";
+		return $"{target} has {value}";
 	}
 
 	private string FormatArrayIndexFunction(ExpressionContext context)
